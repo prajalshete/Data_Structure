@@ -17,7 +17,7 @@ function prefixToInfix(prefix) {
     return stack.pop();
 }
 
-// Example usage:
+
 const prefixExpression = "-+AB*CD";
 const infixExpression = prefixToInfix(prefixExpression);
 console.log("Prefix Expression:", prefixExpression);
