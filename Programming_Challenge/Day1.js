@@ -51,16 +51,16 @@ function sortArray(arr) {
     let m = 0;
     let h = arr.length - 1;
 
-    // Traverse the array and sort the elements
+    
     while (m <= h) {
         if (arr[m] === 0) {
-            [arr[l], arr[m]] = [arr[m], arr[l]];  // Swap 0 to low position
+            [arr[l], arr[m]] = [arr[m], arr[l]];  
             l++;
             m++;
         } else if (arr[m] === 1) {
-            m++;  // 1 is already in place
+            m++;  
         } else {
-            [arr[m], arr[h]] = [arr[h], arr[m]];  // Swap 2 to high position
+            [arr[m], arr[h]] = [arr[h], arr[m]];  
             h--;
         }
     }
@@ -68,9 +68,9 @@ function sortArray(arr) {
 }
 
 // Test cases
-console.log(sortArray([0, 1, 2, 1, 0, 2, 1, 0])); // [0, 0, 0, 1, 1, 1, 2, 2]
-console.log(sortArray([2, 2, 2, 2]));             // [2, 2, 2, 2]
-console.log(sortArray([0, 0, 0, 0]));             // [0, 0, 0, 0]
-console.log(sortArray([1, 1, 1, 1]));             // [1, 1, 1, 1]
-console.log(sortArray([2, 0, 1]));                // [0, 1, 2]
-console.log(sortArray([]));                       // []
+console.log(sortArray([0, 1, 2, 1, 0, 2, 1, 0])); 
+console.log(sortArray([2, 2, 2, 2]));            
+console.log(sortArray([0, 0, 0, 0]));            
+console.log(sortArray([1, 1, 1, 1]));           
+console.log(sortArray([2, 0, 1]));              
+console.log(sortArray([]));                      
